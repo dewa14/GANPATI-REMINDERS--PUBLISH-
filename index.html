@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <img class="logo" src="https://1.bp.blogspot.com/-Fve8mSNt7-4/XxVEX16fEYI/AAAAAAAAGno/xet5bMA-WbQmy3q9Ry7R8_GLKUnril3rQCLcBGAsYHQ/w945-h600-p-k-no-nu/logo.png">
+   <img class="logo" src="https://1.bp.blogspot.com/-MvCv95Grm_A/Xxe5XIpaDqI/AAAAAAAAGn0/8LoMSjFR6WcSuHQIswOJR0is3RXASJpZgCLcBGAsYHQ/s1600/team%2Byellowdragon.png">
+  <h1 class= "id_0002"> GANPATI - REMINDERS </h1>
+  <title> REMINDERS</title>
+  
+  </head>
+  <style>
+  
+       body{
+      background-color:darkgreen;
+          }
+          
+          .id_0002{
+              margin-left: 120px;
+          }
+          
+             .logo {
+             width: 3cm;
+             height: 3cm;
+             border-radius: 50%;
+             padding-right: 20px;
+             padding-bottom: 20px;
+             padding-top:    20px   ;
+             padding-left:   20px  ;
+             }
+             
+             
+      .m-t {
+          
+      }
+      
+      .post_a2 {
+          margin-left: 180px;
+          height: 157px;
+          width: 276px;
+          color:red;
+          font-family: Comic Sans MS;
+          font-weight: bold;
+          font-style: italic;
+          margin-bottom: 25px;
+           margin-top: 25px;
+           border-radius: 20px;
+      }
+      
+      hr {
+          width:240px;
+          border-color: red;
+          margin-top: 2px;
+      }
+      
+      .imp{
+          color: red;
+          font-style: italic;
+          font-weight: bolder;
+          font-size: 19px;
+          font-family:Comic Sans MS;
+          
+      }
+      p{
+        font-weight: bolder;
+        font-family: lato, Sans;
+      }
+      
+      button{
+          background-color: red;
+          border-radius: 20px;
+          border-color: blue;
+          color: blue;
+          font-weight: bold;
+      }
+  </style>
+  
+  <hr>
+  <hr>
+  <br>
+  <br>
+  <div class="imp"> title</div>
+  <hr>
+  <div class="m-t">
+       <p id="savetext">  <hr></p>
+       <p id="opentext"> </p>
+       <div class="p_id1"> <input type="text" id="input" placeholder="these  are just for notes it will not save" class="post_a2"></input>
+           <button onclick="save()" class="post_a1">see</button></div>
+       <script>
+           var storedItem = localStorage.getItem("storedItem");
+    
+           function save() {
+               var Item = document.getElementById("input").value;
+               localStorage.setItem("storedItem", Item)
+               document.getElementById("savetext").innerHTML = Item + " "
+               localStorage.getItem("storedItem");
+               document.getElementById("saveItem").innerHTML = storedItem + " "
+           }
+       </script>
+       
+  </div>
+  <hr>
+  <hr>
+  <div class="imp"> paragraph</div>
+  <hr>
+  <div class="sm-t">
+         <p id="savedtext">  <hr></p>
+         <p id="openedtext"> </p>
+         <div class="p_id1"> <textarea type="text" id="input1" placeholder="these  are just for notes.. they will not get saved on pc or web" class="post_a2"></textarea>
+             <button onclick="save1()" class="post_a1"> see</button></div>
+         <script>
+             var storedItem1= localStorage.getItem("storedItem1");
+      
+             function save1() {
+                 var Item1 = document.getElementById("input1").value;
+                 localStorage.setItem("storedItem", Item1)
+                 document.getElementById("savedtext").innerHTML = Item1 + " "
+                 localStorage.getItem("storedItem1");
+                 document.getElementById("saveItem").innerHTML = storedItem1 + " "
+             }
+         </script>
+  </div>
+  <br>
+  <hr>
+  <hr>
+  <br>
+  <hr>
+  <hr>
+  <br>
+  <br>
+ 
+  <style>
+    .img{
+        width:  180px;
+        height: 150px;
+        border-radius: 40px;
+    }
+    .img2{
+        width:  320px;
+        height: 305px;
+        border-radius: 40px;
+    }
+    .note{
+        font-family: cursive ;
+        color: yellow;
+    }
+    u {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: blue;
+    }
+    hr {
+        border-color: yellow;
+    }
+</style>
+<div class="card1">
+    <div class="img">
+        <img class="img" src="file:///C:/Users/dewaw/OneDrive/Desktop/DESKTOP/ganeshchaturthi.web/img/ganeshchaturthi12341567395535026.jpg">
+        <hr>
+        <div class="note">
+            <p class= "note"> a excellent shlok on ganpati bapaa </p>
+        </div>
+        <img class= "img2" src="https://1.bp.blogspot.com/-MfiuRI1wYnI/XzqZlHb3nrI/AAAAAAAAGpw/Z7ATpGqaVJkh8i3D1hFCQsXi2-pjeHXwwCLcBGAsYHQ/s1500/07eb5e4a6bb54f8527006695c68adaf8.jpg">
+        <hr>
+    </div>
+    </div>
+
+</html>
